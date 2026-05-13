@@ -1,0 +1,82 @@
+body {
+    background-image: url('image.webp');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+}
+
+.atm-machine {
+   background-image: url('background.webp');
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    border: 4px solid #444;
+}
+
+.atm-header {
+    background: #070606;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    border: 2px solid #666;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+}
+
+.screen-container {
+    background: #000000;
+    height: 140px;
+    border: 8px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(192, 214, 192); /* Neon Green */
+    text-align: center;
+    text-shadow: 0 0 5px rgb(188, 229, 188);
+    margin-bottom: 15px;
+}
+
+#atm-input {
+    width: 93%;
+    background: #111;
+    border: 1px solid #444;
+    color: rgb(146, 185, 146);
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 15px 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 3px #222;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px #222;
+}
+
+.btn-cancel { background: #c0392b; } 
+.btn-action { background: #2980b9; font-size: 10px; }
+.btn-enter { background: #27ae60; }
+
+.empty { background: transparent; cursor: default; box-shadow: none; }
